@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dom's Database Page</title>
+  </head>
+  <body>
+    <section id="contents">
+      {{range .}}
+      <p>{{.Value}}</p>
+      {{end}}
+    </section>
+    <form action="/update" method="post">
+      New Entry:<input type="text" name="value">
+      <input type="submit" value="Update Table">
+    </form>
+  </body>
+<html>
